@@ -1,7 +1,7 @@
 Print Patch 
 ==========
 
-Print email with inline images more nicely than the build in print feature 
+Print email with inline images more nicely than the built in print feature 
 
 If you find Print Patch Zimlet useful and want to support its continued development, you can make donations via:
 - PayPal: info@barrydegraaff.tk
