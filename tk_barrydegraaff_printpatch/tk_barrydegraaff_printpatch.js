@@ -72,12 +72,19 @@ PrintpatchZimlet.prototype._handlePrintpatchZimletMenuClick = function(controlle
       var newWin=window.open('','Print-Window','width=800,height=600');
       var content=window.frames[0].document.body.innerHTML;
       newWin.document.open();
-      newWin.document.write(xmlHttp.response.substr(0,xmlHttp.response.indexOf('<a name="attachments"></a>')));
-      newWin.document.write("\r\n<script type=\"text/javascript\">\r\n");
-      newWin.document.write("<!--\r\n");
-      newWin.document.write("         setTimeout('window.print()', 1000);\r\n");
-      newWin.document.write("//-->\r\n");
-      newWin.document.write("</script>\r\n");
+      if(xmlHttp.response.indexOf('<a name="attachments"></a>') > 0)
+      {
+         newWin.document.write(xmlHttp.response.substr(0,xmlHttp.response.indexOf('<a name="attachments"></a>')));
+         newWin.document.write("\r\n<script type=\"text/javascript\">\r\n");
+         newWin.document.write("<!--\r\n");
+         newWin.document.write("         setTimeout('window.print()', 1000);\r\n");
+         newWin.document.write("//-->\r\n");
+         newWin.document.write("</script>\r\n");
+      }
+      else
+      {
+         newWin.document.write(xmlHttp.response);
+      }
       newWin.document.close();
       newWin.focus();
    }
