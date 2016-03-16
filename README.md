@@ -19,3 +19,6 @@ Bugs and feedback: https://github.com/Zimbra-Community/printpatch-zimlet/issues
     wget https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/tk_barrydegraaff_printpatch/tk_barrydegraaff_printpatch.xml
     wget https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/tk_barrydegraaff_printpatch/tk_barrydegraaff_printpatch.js
 
+### Illustration
+
+![alt tag](https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/Zimbra%20Print%20Patch%20by%20Barry.png)
