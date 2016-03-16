@@ -22,3 +22,5 @@ Bugs and feedback: https://github.com/Zimbra-Community/printpatch-zimlet/issues
 ### Illustration
 
 ![alt tag](https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/Zimbra%20Print%20Patch%20by%20Barry.png)
+
+Related bug: https://bugzilla.zimbra.com/show_bug.cgi?id=95856
