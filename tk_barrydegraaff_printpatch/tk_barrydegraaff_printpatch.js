@@ -65,7 +65,7 @@ PrintpatchZimlet.prototype._handlePrintpatchZimletMenuClick = function(controlle
 
    var xmlHttp = null;   
    xmlHttp = new XMLHttpRequest();
-   xmlHttp.open( "GET", '/h/printmessage?id=C:-'+msg.id+'&tz=Europe/Belgrade', true );
+   xmlHttp.open( "GET", '/h/printmessage?id=C:-'+msg.id+"&"+AjxTimezone.getServerId(AjxTimezone.DEFAULT)+"&xim=1", true );
    xmlHttp.send( null );
    xmlHttp.onload = function(e) 
    {
