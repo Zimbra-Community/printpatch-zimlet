@@ -1,7 +1,7 @@
 Print Patch 
 ==========
 
-Print email with inline images more nicely than the built in print feature 
+Add a menu button to print emails with inline images. Compared to the built in Zimbra print feature, this Zimlet reduces the number of pages to print by 50% or so saving the environment.
 
 If you find Print Patch Zimlet useful and want to support its continued development, you can make donations via:
 - PayPal: info@barrydegraaff.tk
