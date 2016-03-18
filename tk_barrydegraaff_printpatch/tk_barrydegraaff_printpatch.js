@@ -36,16 +36,6 @@ var PrintpatchZimlet = tk_barrydegraaff_printpatch_HandlerObject;
  */
 PrintpatchZimlet.prototype.init =
 function() {
-   AjxPackage.require({name:"MailCore", callback:new AjxCallback(this, this._applyRequestHeaders)});
-};
-
-/**
- * Applies the request headers.
- * Request Zimbra to expose "List-Unsubscribe" header to the Zimlet framework
- */
-PrintpatchZimlet.prototype._applyRequestHeaders =
-function() {	
-	ZmMailMsg.requestHeaders["List-Unsubscribe"] = "List-Unsubscribe";
 };
 
 PrintpatchZimlet.prototype._handlePrintpatchZimletMenuClick = function(controller) {
@@ -92,11 +82,10 @@ PrintpatchZimlet.prototype._handlePrintpatchZimletMenuClick = function(controlle
 
 };
 
-PrintpatchZimlet.prototype.onMsgView = function (msg, oldMsg, msgView) {  
 
+PrintpatchZimlet.prototype.initializeToolbar =
+function(app, toolbar, controller, viewId) {
    try {
-      var app = appCtxt.getCurrentApp();
-      var controller = app.getMailListController();
       var toolbar = controller.getCurrentToolbar();
       if (toolbar)
       {
@@ -118,7 +107,7 @@ PrintpatchZimlet.prototype.onMsgView = function (msg, oldMsg, msgView) {
                tooltip: 'Print email',
                index: 9, //position of the button
                image: "zimbraicon", //icon
-               enabled: true //default if undefined is true, defining it for documentation purpose
+               enabled: false
             };
             var button = toolbar.createOp("PrintpatchZimletButton", buttonArgs);
             button.addSelectionListener(new AjxListener(this, this._handlePrintpatchZimletMenuClick, controller));
