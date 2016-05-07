@@ -52,10 +52,20 @@ PrintpatchZimlet.prototype._handlePrintpatchZimletMenuClick = function(controlle
 	} else if(type == ZmId.ITEM_MSG) {
 		msg = items[0];
 	}
-
+   
+   //Difference between shared mailbox id's and normal id's for some reason
+   if(msg.id.indexOf('-') > -1)
+   {
+      var id = msg.cid;
+   }
+   else
+   {
+      var id = '-'+msg.id;
+   }
+   
    var xmlHttp = null;   
    xmlHttp = new XMLHttpRequest();
-   xmlHttp.open( "GET", '/h/printmessage?id=C:-'+msg.id+"&"+AjxTimezone.getServerId(AjxTimezone.DEFAULT)+"&xim=1", true );
+   xmlHttp.open( "GET", '/h/printmessage?id=C:'+id+"&tz="+AjxTimezone.getServerId(AjxTimezone.DEFAULT)+"&xim=1", true );
    xmlHttp.send( null );
    xmlHttp.onload = function(e) 
    {
