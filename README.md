@@ -13,11 +13,9 @@ Bugs and feedback: https://github.com/Zimbra-Community/printpatch-zimlet/issues
 
 ### Installing
 
-    rm -Rf /opt/zimbra/zimlets-deployed/_dev/tk_barrydegraaff_printpatch
-    mkdir -p /opt/zimbra/zimlets-deployed/_dev/tk_barrydegraaff_printpatch
-    cd /opt/zimbra/zimlets-deployed/_dev/tk_barrydegraaff_printpatch
-    wget https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/tk_barrydegraaff_printpatch/tk_barrydegraaff_printpatch.xml
-    wget https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/tk_barrydegraaff_printpatch/tk_barrydegraaff_printpatch.js
+ rm -Rf /opt/zimbra/zimlets-deployed/_dev/tk_barrydegraaff_printpatch
+ cp /opt/zimbra/jetty/webapps/zimbra/WEB-INF/tags/message/messagePrintView.tag /opt/zimbra/jetty/webapps/zimbra/WEB-INF/tags/message/messagePrintView.tag-orig
+ wget https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/messagePrintView.tag -O /opt/zimbra/jetty/webapps/zimbra/WEB-INF/tags/message/messagePrintView.tag
 
 ### Illustration
 
