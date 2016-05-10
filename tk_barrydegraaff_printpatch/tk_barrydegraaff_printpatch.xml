@@ -1,4 +1,0 @@
-<zimlet name="tk_barrydegraaff_printpatch" version="0.5" label="Print button" description="Print a message with inline images without displaying them as attachments" target="main view-window">
-	<include>tk_barrydegraaff_printpatch.js</include>
-	<handlerObject>tk_barrydegraaff_printpatch_HandlerObject</handlerObject>
-</zimlet>
