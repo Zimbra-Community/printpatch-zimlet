@@ -13,7 +13,7 @@ Bugs and feedback: https://github.com/Zimbra-Community/printpatch-zimlet/issues
 
 ### Installing
 
-** the below is ONLY for 8.6 version ** if you use a different Zimbra let me know, test before prod and all that, use for your own risk.
+**The below is ONLY for 8.6 version** if you use a different Zimbra let me know, test before prod and all that, use for your own risk.
 
 To install, first remove the patch zimlet (as root):
 
