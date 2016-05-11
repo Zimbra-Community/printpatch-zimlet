@@ -20,6 +20,10 @@ To install, first remove the patch zimlet (as root):
      rm -Rf /opt/zimbra/zimlets-deployed/_dev/tk_barrydegraaff_printpatch
      cp /opt/zimbra/jetty/webapps/zimbra/WEB-INF/tags/message/messagePrintView.tag /opt/zimbra/jetty/webapps/zimbra/WEB-INF/tags/message/messagePrintView.tag-orig
      wget https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/messagePrintView.tag -O /opt/zimbra/jetty/webapps/zimbra/WEB-INF/tags/message/messagePrintView.tag
+     
+     cp /opt/zimbra/jetty/webapps/zimbra/h/printmessage /opt/zimbra/jetty/webapps/zimbra/h/printmessage-orig
+     wget https://raw.githubusercontent.com/Zimbra-Community/printpatch-zimlet/master/printmessage -O /opt/zimbra/jetty/webapps/zimbra/h/printmessage
+     
 
 Then as zimbra: zmmailboxdctl restart
 
