@@ -3,10 +3,6 @@ Print Patch
 
 Patch for the built in Zimbra print feature, this reduces the number of pages to print by 50% (give or take) saving the environment. It does so, by not printing (broken) attachment thumbnails.
 
-If you find Print Patch useful and want to support its continued development, you can make donations via:
-- PayPal: info@barrydegraaff.tk
-- Bank transfer: IBAN NL55ABNA0623226413 ; BIC ABNANL2A
-
 Bugs and feedback: https://github.com/Zimbra-Community/printpatch-zimlet/issues
 
 ========================================================================
